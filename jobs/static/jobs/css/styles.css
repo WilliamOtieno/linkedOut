@@ -1,0 +1,328 @@
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #f4623a;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #f4623a;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/**,*/
+/**::before,*/
+/**::after {*/
+/*  box-sizing: border-box;*/
+/*}*/
+
+/*html {*/
+/*  font-family: sans-serif;*/
+/*  line-height: 1.15;*/
+/*  -webkit-text-size-adjust: 100%;*/
+/*  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
+/*}*/
+
+/*article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {*/
+/*  display: block;*/
+/*}*/
+
+/*body {*/
+/*  margin: 0;*/
+/*  font-family: "Merriweather", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
+/*  font-size: 1rem;*/
+/*  font-weight: 400;*/
+/*  line-height: 1.5;*/
+/*  color: #212529;*/
+/*  text-align: left;*/
+/*  background-color: #fff;*/
+/*}*/
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    scroll-behavior: smooth;
+}
+.menu-bar
+{
+    background-image: linear-gradient(to right, purple, cyan);
+    position: sticky;
+}
+.nav-link
+{
+    font-size: 16px;
+    color: black !important;
+    margin: 2px;
+}
+.img-responsive {
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;
+}
+.navbar-nav
+{
+    text-align: right;
+}
+.menu-bar .navbar-toggler
+{
+    padding-right: 0;
+    outline: none;
+    border: none;
+}
+.banner
+{
+height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/home.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    opacity: 1;
+}
+.banner h1
+{
+    padding-top: 170px;
+    font-size: 50px;
+    letter-spacing: 6px;
+    font-weight: 600;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.search-job
+{
+    padding: 30px 0;
+    margin: -50px 6% 50px;
+    background-image: linear-gradient(to right, purple, cyan);
+}
+.search-job .form-control
+{
+    max-width: 250px;
+    display: inline-flex;
+    margin: 10px 5px;
+    border-radius: 0;
+    box-shadow: none !important;
+    border: none !important;
+}
+.search-job .btn-primary
+{
+    border-radius: 0;
+    box-shadow: none !important;
+    border: none;
+    display: inline-flex;
+    margin: 5px;
+    padding: 5px 20px;
+}
+
+/*Top Recruiters*/
+#recruiters
+{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+#recruiters h3
+{
+    text-align: center;
+    padding-bottom: 40px;
+}
+h3::before
+{
+    content: '';
+    background-image: linear-gradient(to right, purple, cyan);
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    z-index: -10;
+    margin-top: -15px;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 90px;
+}
+#recruiters img
+{
+    max-width: 100px;
+    margin: 10px 20px;
+}
+
+/*Full-time Jobs and Internships*/
+#jobs
+{
+    background: lightcyan;
+    padding: 50px 0;
+}
+
+#internships_post
+{
+    background: lightcyan;
+    padding: 50px 0;
+}
+
+.company-details
+{
+    box-shadow: 0 2px 70px 0 rgba(110, 130, 208, .18);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.job-update
+{
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.job-update .fa
+{
+    margin-top: 5px;
+    margin-right: 10px;
+    color: black;
+}
+.job-update .small
+{
+    background: darkgrey;
+    padding: 1px 5px;
+    margin: 0px 5px;
+}
+.job-update p
+{
+    margin-bottom: 0 !important;
+}
+.job-update a
+{
+    text-decoration: none !important;
+    color: slategrey;
+    float: right;
+}
+.apply-btn
+{
+    height: 40px;
+    background-image: linear-gradient(to right, purple, hotpink);
+    padding: 7px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.apply-btn .btn-primary
+{
+    padding: 0 30px;
+    float: right;
+    border-radius: 0;
+    box-shadow: none !important;
+    background: transparent;
+    border: 1px solid antiquewhite;
+}
+.page-link li
+{
+    height: 25px;
+    width: 25px;
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+}
+.page-link li:hover
+{
+    color: navajowhite;
+    background-image: linear-gradient(to right, purple, hotpink);
+}
+.left-arrow
+{
+    color: rebeccapurple;
+}
+.right-arrow
+{
+    color: purple;
+}
+
+/*Site Stats*/
+#site-stats
+{
+    padding: 100px 0;
+}
+#site-stats h3
+{
+    margin-bottom: 30px;
+}
+.stats-box
+{
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 2px 40px 0 rgba(110, 130, 208, .18);
+}
+.stats-box .fa
+{
+    font-size: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/*body {*/
+/*    margin: 0;*/
+/*    background: linear-gradient(45deg, #49a09d, #5f2c82);*/
+/*    font-family: sans-serif;*/
+/*    font-weight: 100;*/
+/*}*/
+
+/*.container {*/
+/*    !*position: absolute;*!*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+/*}*/
+
+/*Footer*/
+#footer
+{
+    background: white;
+    padding: 20px 10px 8px;
+}
+.footer-image
+{
+    margin: 30px 0;
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;
+}
+
+#footer p
+{
+    color: black;
+}
+#footer a img
+{
+    width: 50px;
+
+}
+.fa-heartbeat
+{
+    color: red;
+}
+hr
+{
+    background-color: black;
+}
+

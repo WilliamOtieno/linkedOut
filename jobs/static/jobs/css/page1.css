@@ -1,0 +1,224 @@
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #f4623a;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #f4623a;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    padding-bottom: calc(10rem - 4.5rem);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%), url(../images/scenery.jpeg);
+    margin-top:40px;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family:sans-serif;
+    opacity: 1;
+}
+
+.regform{
+    width:800px;
+    background-color:rgb(0,0,0,0.6);
+    margin:auto;
+    color:#FFFFFF;
+    padding:10px 0px 10px 0px;
+    text-align:center;
+    border-radius:15px 15px 0px 0px ;
+}
+.main{
+    background-color:rgb(0,0,0,0.5);
+    width:800px;
+    margin:auto;}
+
+form{
+    padding:10px;
+
+}
+
+#name{
+    width:100%;
+    height:100px;
+
+}
+.name{
+    margin-left:25px;
+    margin-top:30px;
+    width: 125px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;}
+.form-control input-lg{
+    position: relative;
+    left:200px;
+    top:-37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+
+}
+/*.job-title{*/
+/*    position: relative;*/
+/*    left:417px;*/
+/*    top:-80px;*/
+/*    line-height: 40px;*/
+/*    border-radius: 6px;*/
+/*    padding: 0 22px;*/
+/*    font-size: 16px;*/
+/*    color:#555;*/
+/*}*/
+
+.job-title{
+    position:relative;
+    left:200px;
+    top:-37px;
+    line-height: 40px;
+    width:480px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+#field{
+    position:relative;
+    color:#E5E5E5;
+    text-transform: capitalize;
+    font-size: 14px;
+    left:203px;
+    top:-45px;
+}
+#sub-field{
+    position:relative;
+    color:#E5E5E5;
+    text-transform:capitalize;
+    font-size:14px;
+    left:492px;
+    top:-76px;
+}
+.company{
+    position:relative;
+    left:200px;
+    top:-37px;
+    line-height: 40px;
+    width:480px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+.email{
+    position:relative;
+    left:200px;
+    top:-37px;
+    line-height: 40px;
+    width:480px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+
+.number{
+    position:relative;
+    left:200px;
+    top:-37px;
+    line-height: 40px;
+    width:255px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+.phone-number{
+    position:relative;
+    color:#E5E5E5;
+    text-transform:capitalize;
+    font-size:16px;
+    left:-100px;
+    top:-2px;
+}
+.option{
+    position:relative;
+    left:200px;
+    top:-37px;
+    line-height: 40px;
+    width:532px;
+    height:40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+    outline:none;
+    overflow:hidden;
+}
+.option option{
+    font-size:20px;
+}
+#customer{
+    margin-left:25px;
+    color:white;
+    font-size:18px;
+
+}
+.radio{
+    display:inline-block;
+    padding-right:70px;
+    font-size:25px;
+    margin-left:25px;
+    margin-top:15px;
+    color:white;
+}
+.radio input{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    cursor:pointer;
+    outline:none;
+}
+button{
+    background-color:#3BAF9F;
+    display:block;
+    margin:20px 0px 0px 20px;
+    text-align:center;
+    border-radius:12px;
+    border:2px solid #366473;
+    padding:14px 110px;
+    outline:none;
+    color:white;
+    cursor:pointer;
+    transition:0.25px;
+}
+button:hover{
+    background-color:#5390F5;
+}
