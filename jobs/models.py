@@ -9,3 +9,6 @@ class Job(models.Model):
     county = models.CharField(max_length=20)
     email = models.EmailField()
     phone_num = models.CharField(max_length=12)
+
+    def __str__(self):
+        return self.job_title
