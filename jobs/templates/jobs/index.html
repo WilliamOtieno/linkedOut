@@ -1,4 +1,5 @@
 {% load static %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -117,89 +118,20 @@
 <section id="jobs">
     <div class="container">
         <h5><b>RECENT UPDATES</b></h5>
-        <div class="company-details">
-            <div class="job-update"></div>
-            <h6><b><i>General Physician</i></b></h6>
-            <p>Aga Khan University Hospital</p>
-            <i class="fa fa-stethoscope"></i><span> 2-4 years </span><br>
-            <i class="fa fa-money"></i><span> Ksh. 100,000 p. a.</span><br>
-            <i class="fa fa-map-marker"></i><span> Nairobi </span><br>
-            <p>Skills <i class="fa fa-angle-double-right"></i><small> Infection control </small><small> Great patient care </small>
-                <small> Stress Management </small></p>
-            <p>Description <i class="fa fa-angle-double-right"></i> Passionate <a href="#">Read more</a></p>
-        </div>
-        <div class="apply-btn">
-            <button type="button" class="btn btn-primary">Apply</button>
-        </div>
+        {% for job in jobs %}
 
-        <div class="company-details">
-            <div class="job-update"></div>
-            <h6><b><i> Junior Front-end Developer </i></b></h6>
-            <p>IBM Kenya</p>
-            <i class="fa fa-stethoscope"></i><span> 1-4 years </span><br>
-            <i class="fa fa-money"></i><span> Ksh. 90,000 p. a.</span><br>
-            <i class="fa fa-map-marker"></i><span> Kiambu </span><br>
-            <p>Skills <i class="fa fa-angle-double-right"></i><small> HTML </small><small> CSS </small>
-                <small> Js </small><small> Bootstrap </small></p>
-            <p>Description <i class="fa fa-angle-double-right"></i> Diligent <a href="#">Read more</a></p>
-        </div>
+            <div class="company-details">
+                <div class="job-update"></div>
+                <h6><b><i> {{ job.job_title }} </i></b></h6>
+                <p>{{ job.company_name }}</p>
+                <i class="fa fa-map-marker"></i><span> {{ job.county }} </span><br>
+                <p>Description <i class="fa fa-angle-double-right"></i> Diligent <a href="#">Read more</a></p>
+            </div>
 
-
-        <div class="container">
-            <table>
-                <thead>
-                <tr>
-                    <th>Field</th>
-                    <th>Job Title</th>
-                    <th>Company Name</th>
-                    <th>County</th>
-                    <th>Salary Offer</th>
-                    <th>Phone</th>
-                    <th>Email</th>
-                    <th>Experience</th>
-
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Junior Front-end Developer</td>
-                    <td>Cell 2</td>
-                    <td>Cell 3</td>
-                    <td>Cell 4</td>
-                    <td>Cell 5</td>
-                    <td>Cell 6</td>
-                    <td>Cell 7</td>
-                    <td>Cell 8</td>
-                </tr>
-                <tr>
-                    <td>Cell 1</td>
-                    <td>Cell 2</td>
-                    <td>Cell 3</td>
-                    <td>Cell 4</td>
-                    <td>Cell 5</td>
-                    <td>Cell 6</td>
-                    <td>Cell 7</td>
-                    <td>Cell 8</td>
-                </tr>
-                <tr>
-                    <td>Cell 1</td>
-                    <td>Cell 2</td>
-                    <td>Cell 3</td>
-                    <td>Cell 4</td>
-                    <td>Cell 5</td>
-                    <td>Cell 6</td>
-                    <td>Cell 7</td>
-                    <td>Cell 8</td>
-                </tr>
-
-                </tbody>
-            </table>
-        </div>
-
-
-        <div class="apply-btn">
-            <button type="button" class="btn btn-primary">Apply</button>
-        </div>
+            <div class="apply-btn">
+                <button type="button" class="btn btn-primary">Apply</button>
+            </div>
+        {% endfor %}
 
         <ul class="page-link text-center">
             <li class="left-arrow">&#8592;</li>
@@ -277,3 +209,4 @@
 </section>
 </body>
 </html>
+{% endblock %}
