@@ -14,4 +14,5 @@ class JobListView(ListView):
     model = Job
     template_name = 'jobs/index.html'
     context_object_name = 'jobs'
+    ordering = ['-date_posted']
     paginate_by = 5
