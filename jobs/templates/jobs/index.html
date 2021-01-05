@@ -115,6 +115,7 @@
                 <p>{{ job.company_name }}</p>
                 <i class="fa fa-map-marker"></i><span> {{ job.county }} </span><br>
                 <p>Description <i class="fa fa-angle-double-right"></i> {{ job.description }} <a href="#">Read more</a></p>
+                <small class="text-muted">{{ job.date_posted|date:"F d, Y" }}</small>
             </div>
 
             <div class="apply-btn">
